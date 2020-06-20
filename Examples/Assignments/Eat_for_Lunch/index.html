@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
     <title>Edibles for lunch</title>
   </head>
   <body>
     <h1>Edibles for lunch</h1>
     <div ng-controller='LunchCheckController'>
-      <input class="" type="text" ng-model="name">
+      <input class="centrar" type="text" ng-model="name">
       <br> {{checkIfEmpty()}}
-      {{ms}} <br><br>
-      <button ng-click="messageQuantity()">Check if too much</button>
+      <h2>{{ms}}</h2> <br><br>
+      <button class="button" ng-click="messageQuantity()">Check if too much</button>
 
-      <br>Items currently found: {{qtyItems}}
+      <br><h2>Items currently found: {{qtyItems}}</h2>
 
     </div>
   </body>
